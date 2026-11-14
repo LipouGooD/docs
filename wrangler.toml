@@ -12,8 +12,8 @@ binding = "DB"
 database_name = "personal-docs"
 database_id = "3902dff5-3fc7-45ca-8d2d-d6f2d6c14546"
 migrations_dir = "migrations"
+ADMIN_PASSWORD: "FANTORN"
 
 [observability]
 enabled = true
 
-ADMIN_PASSWORD: "FANTORN"
