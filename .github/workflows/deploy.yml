@@ -14,8 +14,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_API_TOKEN: ${{ 3902dff5-3fc7-45ca-8d2d-d6f2d6c14546 }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ f4283bdbff47f9a3514a4a0e73ec0892 }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
