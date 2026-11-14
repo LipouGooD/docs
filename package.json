@@ -1,0 +1,27 @@
+{
+  "name": "personal-docs",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node scripts/wrangler.mjs dev",
+    "deploy": "node scripts/wrangler.mjs deploy",
+    "typecheck": "tsc --noEmit",
+    "check": "tsc --noEmit && node scripts/wrangler.mjs deploy --dry-run",
+    "db:migrate:local": "node scripts/wrangler.mjs d1 migrations apply DB --local",
+    "db:migrate:remote": "node scripts/wrangler.mjs d1 migrations apply DB --remote",
+    "db:export": "node scripts/wrangler.mjs d1 export DB --remote --output backup.sql"
+  },
+  "dependencies": {
+    "hono": "^4.13.18",
+    "markdown-it": "^15.0.3"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261114.1",
+    "typescript": "^5.7.2",
+    "wrangler": "^4.162.0"
+  }
+}
