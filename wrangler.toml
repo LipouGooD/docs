@@ -16,6 +16,4 @@ migrations_dir = "migrations"
 [observability]
 enabled = true
 
- "vars": {
-    "ADMIN_PASSWORD": "FANTORN"
-  }
+ADMIN_PASSWORD: "FANTORN"
